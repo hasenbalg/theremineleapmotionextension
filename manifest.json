@@ -1,0 +1,20 @@
+{
+    "name": "Theremin Leap Motion Extension",
+    "version": "0.1",
+    "description": "Play the Theremin using a Leap Motion and your browser",
+	"permissions": ["storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+"page_action": {
+      "default_popup": "popup.html",
+    },
+"default_icon": {
+        "16": "imgs/16.png",
+        "32": "imgs/32.png",
+        "48": "imgs/48.png",
+        "128": "imgs/128.png"
+      }
+    "manifest_version": 2
+  }
