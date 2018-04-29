@@ -5,27 +5,29 @@
 </head>
 <body>
 
-  <p>Press SPACEBAR to <span id="pause">pause</span></p>
   <ul>
     <li>
-      <button type="button" name="button">&#9614;&#9614 | &#9654;</button><br>
-      Pause
+      <img src="imgs/icon.svg" alt="" width="200">
     </li>
     <li>
-      <input type="range" id="volume_slider" value="50"><br>
-      Volume
+      <button type="button" name="button" id="pausebtn">&#9614;&#9614 | &#9654;</button>
+      <label for="">[SPACEBAR] <span id="pause">pause</span></label>
     </li>
     <li>
-      <input type="range" id="pitch_slider" value="50"><br>
-      Pitch
+      <input type="range" id="volume_slider" value="50">
+      <label for="volume_slider">Vol</label>
     </li>
     <li>
-      <input type="range" id="waveform_slider" value="50"><br>
-      Waveform
+      <input type="range" id="pitch_slider" value="50" disabled>
+      <label for="pitch_slider">Pitch</label>
     </li>
     <li>
-      <input type="range" id="brightness_slider" value="50"><br>
-      Brightnes
+      <input type="range" id="waveform_slider" value="50">
+      <label for="waveform_slider">Waveform</label>
+    </li>
+    <li>
+      <input type="range" id="brightness_slider" value="50" disabled>
+      <label for="brightness_slider">Brightness</label>
     </li>
   </ul>
   <script src="js/leap-0.6.4.js" charset="utf-8"></script>

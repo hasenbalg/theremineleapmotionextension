@@ -111,3 +111,17 @@ document.body.onkeyup = function(e){
         togglePause();
     }
 }
+
+document.getElementById('pausebtn').addEventListener("click", function() {
+    togglePause();
+});
+
+document.getElementById('volume_slider').addEventListener("change", function() {
+    gain.gain.value = map(this.value, 0,100, 0, 1);
+    console.log(max_vol);
+});
+
+document.getElementById('waveform_slider').addEventListener("change", function() {
+    osc.type = osc_types[Math.floor(map(this.value, 0, 100, 0, osc_types.length))]
+    console.log(osc.type);
+});
