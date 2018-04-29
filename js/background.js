@@ -1,3 +1,4 @@
+'use strict';
 chrome.runtime.onInstalled.addListener(function() {
     var defaultValues = {
 	'volume': 50,
@@ -8,4 +9,7 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.set(defaultValues, function() {
       console.log("Set the default values to browser storage.");
     });
+
+  
+
   });

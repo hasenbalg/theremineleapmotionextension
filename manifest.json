@@ -1,20 +1,30 @@
 {
-    "name": "Theremin Leap Motion Extension",
-    "version": "0.1",
-    "description": "Play the Theremin using a Leap Motion and your browser",
-	"permissions": ["storage"],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+  "name": "Theremin Leap Motion Extension",
+  "version": "1.0",
+  "description": "Play the Theremin using a Leap Motion and your browser",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "imgs/16.png",
+      "32": "imgs/32.png",
+      "48": "imgs/48.png",
+      "128": "imgs/128.png"
     },
-"page_action": {
-      "default_popup": "popup.html",
-    },
-"default_icon": {
-        "16": "imgs/16.png",
-        "32": "imgs/32.png",
-        "48": "imgs/48.png",
-        "128": "imgs/128.png"
-      }
-    "manifest_version": 2
-  }
+    "default_title": "Theremin Leap Motion",
+    "default_popup": "popup.html" 
+  },
+  "icons": {
+    "16": "imgs/16.png",
+    "32": "imgs/32.png",
+    "48": "imgs/48.png",
+    "128": "imgs/128.png"
+  },
+  "manifest_version": 2
+}
